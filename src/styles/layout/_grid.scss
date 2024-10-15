@@ -1,0 +1,27 @@
+// Grid system for different breakpoints
+.container {
+  margin: 0 auto;
+  padding: 0 map-get($side-padding, desktop);
+
+  @include respond-to('tablet') {
+    padding: 0 map-get($side-padding, tablet);
+  }
+
+  @include respond-to('mobile') {
+    padding: 0 map-get($side-padding, mobile);
+  }
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(map-get($columns, desktop), 1fr);
+  gap: $column-gap;
+
+  @include respond-to('tablet') {
+    grid-template-columns: repeat(map-get($columns, tablet), 1fr);
+  }
+
+  @include respond-to('mobile') {
+    grid-template-columns: repeat(map-get($columns, mobile), 1fr);
+  }
+}

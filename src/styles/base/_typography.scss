@@ -1,0 +1,23 @@
+// Typography styles
+body {
+  @include font-size(16px, 24px); // Base font size
+}
+
+h1 {
+  @include font-size(60px, 60px); // Desktop main title
+  font-weight: map-get($font-weights, semibold);
+}
+
+h2 {
+  @include font-size(48px, 48px); // Section titles for tablet
+  font-weight: map-get($font-weights, semibold);
+}
+
+// Small text
+.text-xs {
+  @include font-size(12px, 16px); // For badges
+}
+
+.text-base {
+  @include font-size(16px, 24px); // General body text
+}

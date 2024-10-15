@@ -1,0 +1,21 @@
+// Media query mixin for responsiveness
+@mixin respond-to($breakpoint) {
+  @if map-has-key($breakpoints, $breakpoint) {
+    @media (min-width: map-get($breakpoints, $breakpoint)) {
+      @content;
+    }
+  }
+}
+
+// Flexbox helper
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// Font size and line height mixin
+@mixin font-size($size, $line-height) {
+  font-size: $size;
+  line-height: $line-height;
+}

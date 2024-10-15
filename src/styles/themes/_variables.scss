@@ -1,0 +1,87 @@
+// Typography
+$font-family: 'Noto Sans', sans-serif;
+$font-weights: (
+  normal: 400,
+  medium: 500,
+  semibold: 600
+);
+
+$font-sizes: (
+  xsmall: 12px,
+  small: 14px,
+  base: 16px,
+  large: 20px,
+  xlarge: 24px,
+  xxlarge: 30px
+);
+
+// Breakpoints
+$breakpoints: (
+  desktop: 1440px,
+  tablet: 768px,
+  mobile: 375px
+);
+
+// Grid settings
+$container-max-widths: (
+  desktop: 1280px,
+  tablet: 100%,
+  mobile: 100%
+);
+$columns: (
+  desktop: 12,
+  tablet: 6,
+  mobile: 4
+);
+$column-gap: 32px;
+
+// Spacing
+$base-spacing: 4px;
+$side-padding: (
+  desktop: 32px,
+  tablet: 32px,
+  mobile: 16px
+);
+
+// Colors
+$colors: (
+  primary: #171717,
+  primary-hover: #0a0a0a,
+  primary-invert: #fff,
+  secondary: #525252,
+  tertiary: #737373,
+  brand: #4338ca,
+  disabled: #a3a3a3,
+  error: #dc2626,
+  success: #15803d,
+  warning: #a16207,
+  light-gray: #e5e5e5
+);
+
+// Background colors
+$background-colors: (
+  primary: #fff,
+  secondary: #e5e7eb,
+  tertiary: #fafafa,
+  disabled: #f5f5f5,
+  brand: #4338ca,
+  error: #dc2626,
+  success-subtle: #f0fdf4,
+  success: #15803d,
+  warning-subtle: #fffbeb,
+  light-purple: #eef2ff,
+  fushia: #c026d3,
+  light-fushia: #fdf4ff,
+  light-orange: #f97316,
+  light-gray: #e5e5e5
+);
+
+$spacings: (
+  half-x: 4px,
+  third-x: 6px,
+  x: 8px,
+  x-and-half: 12px,
+  2x: 16px,
+  3x: 24px,
+  4x: 32px
+);
