@@ -40,45 +40,39 @@
         </div>
         <!-- .intro__title -->
         <div class="intro__illustrations">
-          <div class="intro__illustration intro__illustration--purple">
-            <div class='intro__illustration__image'>
-              <img src="@/images/mail-open-line.svg" alt="illustration" />
-            </div>
-            <div class="intro__illustration__title">Get instant answers</div>
-            <div class="intro__illustration__description">
+          <illustration-item title="Write an Essay" img='mail-open-line.svg' custom-class='purple'>
+            <template v-slot:image>
+              <img src="@/images/mail-open-line.svg" alt="pencil" />
+            </template>
+            <template v-slot:text>
               Generate email for any <br> occasion you need.
-            </div>
-          </div>
-          <!-- .intro__illustration -->
-          <div class="intro__illustration intro__illustration--green">
-            <div class='intro__illustration__image'>
-              <img src="@/images/pencil-line.svg" alt="illustration" />
-            </div>
-            <div class="intro__illustration__title">Write an Essay</div>
-            <div class="intro__illustration__description">
+            </template>
+          </illustration-item>
+          <illustration-item title="Write an Essay" img='pencil-line.svg' custom-class='green'>
+            <template v-slot:image>
+              <img src="@/images/pencil-line.svg" alt="pencil" />
+            </template>
+            <template v-slot:text>
               Generate essay for any <br> occasion you need.
-            </div>
-          </div>
-          <!-- .intro__illustration -->
-          <div class="intro__illustration intro__illustration--dark-purple">
-            <div class='intro__illustration__image'>
-              <img src="@/images/timeline-view.svg" alt="illustration" />
-            </div>
-            <div class="intro__illustration__title">Planning</div>
-            <div class="intro__illustration__description">
+            </template>
+          </illustration-item>
+          <illustration-item title="Planning" img='timeline-view.svg' custom-class='dark-purple'>
+            <template v-slot:image>
+              <img src="@/images/timeline-view.svg" alt="timeline" />
+            </template>
+            <template v-slot:text>
               Plan for any occasion,<br> from holiday to family.
-            </div>
-          </div>
+            </template>
+          </illustration-item>
           <!-- .intro__illustration -->
-          <div class="intro__illustration intro__illustration--orange">
-            <div class='intro__illustration__image'>
-              <img src="@/images/chat-1-line.svg" alt="illustration" />
-            </div>
-            <div class="intro__illustration__title">Assistant</div>
-            <div class="intro__illustration__description">
+          <illustration-item title="Planning" img='chat-1-line.svg' custom-class='orange'>
+            <template v-slot:image>
+              <img src="@/images/chat-1-line.svg" alt="chat" />
+            </template>
+            <template v-slot:text>
               Become your personal <br>assistant. Helping you.
-            </div>
-          </div>
+            </template>
+          </illustration-item>
           <!-- .intro__illustration -->
         </div>
         <!-- .intro__illustrations -->
@@ -97,6 +91,8 @@
 </template>
 <script setup>
 import CustomButton from './components/Button/CustomButton.vue';
+import IllustrationItem from './components/Illustration/IllustrationItem.vue';
+
 
 </script>
 <style lang='scss'>
