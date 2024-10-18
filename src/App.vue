@@ -13,11 +13,10 @@
         </div>
       </div>
       <!-- .side-bar__active-prompts -->
-      <div class="side-bar__start-new-chat">
+      <custom-button left-aligned-content type='secondary'>
         <img src="@/images/sparkling-2-line.svg" alt="logo" />
-        <span class="side-bar__start-new-chat__text">Start new chat</span>
-      </div>
-      <!-- .side-bar__start-new-chat -->
+        <span>Start new chat</span>
+      </custom-button>
       <div class="side-bar__authenticate">
         <div class="side-bar__authenticate__title">
           Let’s create an account
@@ -26,12 +25,8 @@
           Save your chat history, share chat, and personalize your experience.
         </div>
         <div class="side-bar__authenticate__actions">
-          <div class="side-bar__authenticate__actions__signin">
-            Sign in
-          </div>
-          <div class="side-bar__authenticate__actions__signup">
-            Create account
-          </div>
+          <custom-button type='primary' full-width text='Sign in' />
+          <custom-button type='link' full-width text='Create account' />
         </div>
       </div>
     </div>
@@ -91,16 +86,17 @@
       <!-- .intro -->
       <div class="chat-prompt">
         <textarea rows="1" placeholder="Ask me anything..." />
-        <button class="button">
+        <custom-button>
           <img src="@/images/submit.svg" alt="send" />
           <span>Submit</span>
-        </button>
+        </custom-button>
       </div>
     </div>
     <!-- .main -->
   </div>
 </template>
 <script setup>
+import CustomButton from './components/Button/CustomButton.vue';
 
 </script>
 <style lang='scss'>
@@ -115,6 +111,8 @@
   border-right: 1px solid map-get($colors, neutral-200);
   padding: map-get($spacings, 3x) map-get($spacings, 4x);
   user-select: none;
+  display: flex;
+  flex-direction: column;
 
   &__logo {
     display: flex;
@@ -124,6 +122,7 @@
 
   &__active-prompts {
     height: 396px;
+    flex-grow: 1;
 
     &__header {
       display: flex;
@@ -175,8 +174,11 @@
     }
 
     &__actions {
+      display: flex;
+      flex-direction: column;
       margin-top: map-get($spacings, 3x);
       text-align: center;
+      gap: map-get($spacings, x);
 
       &__signin {
         cursor: pointer;
@@ -305,17 +307,6 @@
     padding: 12px 14px;
     outline: none;
     resize: none;
-  }
-
-  button {
-    display: flex;
-    padding: 10px 14px;
-    justify-content: center;
-    align-items: center;
-    gap: 4px;
-    border-radius: 4px;
-    background: map-get($background-colors, indigo-700);
-    color: map-get($colors, white);
   }
 }
 </style>
