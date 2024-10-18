@@ -29,6 +29,22 @@
           <custom-button type='link' full-width text='Create account' />
         </div>
       </div>
+      <div class='side-bar__user'>
+        <div class="side-bar__user__avatar">
+          <img src="@/images/avatar.png" alt="user" />
+          <span>John Doe</span>
+        </div>
+        <dropdown-menu>
+          <div>
+            <img src="@/images/settings.svg" alt="logo" />
+            <span>Settings</span>
+          </div>
+          <div>
+            <img src="@/images/logout.svg" alt="logo" />
+            <span>Sign out</span>
+          </div>
+        </dropdown-menu>
+      </div>
     </div>
     <div class="main">
       <div class="intro">
@@ -91,8 +107,8 @@
 </template>
 <script setup>
 import CustomButton from './components/Button/CustomButton.vue';
+import DropdownMenu from './components/Dropdown/DropdownMenu.vue';
 import IllustrationItem from './components/Illustration/IllustrationItem.vue';
-
 
 </script>
 <style lang='scss'>
@@ -109,6 +125,34 @@ import IllustrationItem from './components/Illustration/IllustrationItem.vue';
   user-select: none;
   display: flex;
   flex-direction: column;
+
+  &__user {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: map-get($spacings, 4x);
+    margin-bottom: map-get($spacings, 4x);
+    padding: map-get($spacings, 3x);
+
+    &__avatar {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+
+      img {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+      }
+
+      span {
+        font-size: map-get($font-sizes, small);
+        font-weight: map-get($font-weights, medium);
+        line-height: 20px;
+        color: map-get($colors, neutral-900);
+      }
+    }
+  }
 
   &__logo {
     display: flex;
@@ -128,24 +172,6 @@ import IllustrationItem from './components/Illustration/IllustrationItem.vue';
       background-color: map-get($background-colors, neutral-50);
       border-radius: 4px;
       color: map-get($colors, indigo-700);
-    }
-  }
-
-  &__start-new-chat {
-    display: flex;
-    align-items: center;
-    padding: 10px;
-    border-radius: 4px;
-    border: 0.5px solid map-get($colors, neutral-200);
-    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.10), 0px 1px 2px 0px rgba(0, 0, 0, 0.06);
-    cursor: pointer;
-    gap: map-get($spacings, 2x);
-
-    &__text {
-      color: map-get($colors, neutral-900);
-      font-size: map-get($font-sizes, small);
-      font-weight: map-get($font-weights, medium);
-      line-height: 20px;
     }
   }
 
@@ -175,26 +201,6 @@ import IllustrationItem from './components/Illustration/IllustrationItem.vue';
       margin-top: map-get($spacings, 3x);
       text-align: center;
       gap: map-get($spacings, x);
-
-      &__signin {
-        cursor: pointer;
-        color: map-get($colors, white);
-        border-radius: 4px;
-        background: map-get($background-colors, indigo-700);
-        box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.10), 0px 1px 2px 0px rgba(0, 0, 0, 0.06);
-        padding: map-get($spacings, 2x);
-        margin-bottom: map-get($spacings, 2x);
-      }
-
-      &__signup {
-        cursor: pointer;
-        border-radius: 4px;
-        padding: map-get($spacings, 2x);
-        color: map-get($colors, indigo-700);
-        font-size: map-get($font-sizes, small);
-        font-weight: map-get($font-weights, medium);
-        line-height: 20px;
-      }
     }
   }
 }
@@ -224,66 +230,6 @@ import IllustrationItem from './components/Illustration/IllustrationItem.vue';
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: map-get($spacings, 3x);
-  }
-
-  &__illustration {
-    display: flex;
-    flex-direction: column;
-    border-radius: 8px;
-    border: 1px solid map-get($colors, neutral-200);
-    background: map-get($background-colors, white);
-    padding: map-get($spacings, 4x);
-
-    &--purple {
-
-      .intro__illustration__image {
-        background-color: map-get($background-colors, indigo-50);
-      }
-    }
-
-    &--green {
-      .intro__illustration__image {
-        background-color: map-get($background-colors, success-subtle);
-      }
-    }
-
-    &--dark-purple {
-      .intro__illustration__image {
-        background-color: map-get($background-colors, light-fushia);
-      }
-    }
-
-    &--orange {
-      .intro__illustration__image {
-        background-color: map-get($background-colors, warning-subtle);
-      }
-    }
-
-    &__image {
-      background-color: map-get($background-colors, indigo-50);
-      border-radius: 8px;
-      width: 40px;
-      height: 40px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin-bottom: map-get($spacings, 3x);
-    }
-
-    &__title {
-      font-size: map-get($font-sizes, small);
-      font-weight: map-get($font-weights, semibold);
-      line-height: 20px;
-      color: map-get($colors, neutral-900);
-      margin-bottom: map-get($spacings, 2x);
-    }
-
-    &__description {
-      font-size: map-get($font-sizes, xsmall);
-      color: map-get($colors, neutral-600);
-      font-weight: map-get($font-weights, normal);
-      line-height: 16px;
-    }
   }
 }
 

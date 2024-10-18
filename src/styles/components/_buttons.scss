@@ -71,3 +71,10 @@
   }
   transition: all 0.2s linear;
 }
+
+.resetted-button {
+  outline: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
