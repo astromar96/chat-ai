@@ -2,14 +2,14 @@
   padding: $base-spacing * 3;
   border: 1px solid map-get($colors, primary);
   border-radius: 4px;
-  background-color: map-get($background-colors, tertiary);
+  background-color: map-get($background-colors, neutral-500);
   font-size: 16px;
 
   &::placeholder {
-    color: map-get($colors, tertiary);
+    color: map-get($colors, neutral-500);
   }
 
   &:focus {
-    border-color: map-get($colors, brand);
+    border-color: map-get($colors, indigo-700);
   }
 }

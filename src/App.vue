@@ -112,14 +112,14 @@
 
 .side-bar {
   width: 240px;
-  border-right: 1px solid map-get($colors, light-gray);
-  padding: map-get($spacings, 3x) map-get($spacings, 2x);
+  border-right: 1px solid map-get($colors, neutral-200);
+  padding: map-get($spacings, 3x) map-get($spacings, 4x);
   user-select: none;
 
   &__logo {
     display: flex;
     align-items: center;
-    padding: map-get($spacings, 2x) map-get($spacings, half-x);
+    padding: map-get($spacings, 4x) map-get($spacings, 2x);
   }
 
   &__active-prompts {
@@ -128,11 +128,11 @@
     &__header {
       display: flex;
       align-items: center;
-      padding: map-get($spacings, third-x);
-      gap: map-get($spacings, x-and-half);
-      background-color: map-get($background-colors, tertiary);
+      padding: 6px;
+      gap: map-get($spacings, 3x);
+      background-color: map-get($background-colors, neutral-50);
       border-radius: 4px;
-      color: map-get($colors, brand);
+      color: map-get($colors, indigo-700);
     }
   }
 
@@ -141,13 +141,13 @@
     align-items: center;
     padding: 10px;
     border-radius: 4px;
-    border: 0.5px solid map-get($colors, light-gray);
+    border: 0.5px solid map-get($colors, neutral-200);
     box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.10), 0px 1px 2px 0px rgba(0, 0, 0, 0.06);
     cursor: pointer;
-    gap: map-get($spacings, half-x);
+    gap: map-get($spacings, 2x);
 
     &__text {
-      color: map-get($colors, primary);
+      color: map-get($colors, neutral-900);
       font-size: map-get($font-sizes, small);
       font-weight: map-get($font-weights, medium);
       line-height: 20px;
@@ -156,22 +156,22 @@
 
   &__authenticate {
     border-radius: 8px;
-    border: 1px solid map-get($colors, light-gray);
-    padding: map-get($spacings, 2x);
-    margin-top: map-get($spacings, 2x);
+    border: 1px solid map-get($colors, neutral-200);
+    padding: map-get($spacings, 4x);
+    margin-top: map-get($spacings, 4x);
 
     &__title {
       font-size: map-get($font-sizes, smail);
       font-weight: map-get($font-weights, medium);
       line-height: 20px;
-      color: map-get($colors, primary);
-      margin-bottom: map-get($spacings, half-x);
+      color: map-get($colors, neutral-900);
+      margin-bottom: map-get($spacings, 2x);
     }
 
     &__description {
       font-size: map-get($font-sizes, xsmall);
       line-height: 16px;
-      color: map-get($colors, secondary);
+      color: map-get($colors, neutral-600);
     }
 
     &__actions {
@@ -180,19 +180,19 @@
 
       &__signin {
         cursor: pointer;
-        color: map-get($colors, primary-invert);
+        color: map-get($colors, white);
         border-radius: 4px;
-        background: map-get($background-colors, brand);
+        background: map-get($background-colors, indigo-700);
         box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.10), 0px 1px 2px 0px rgba(0, 0, 0, 0.06);
-        padding: map-get($spacings, x);
-        margin-bottom: map-get($spacings, half-x);
+        padding: map-get($spacings, 2x);
+        margin-bottom: map-get($spacings, 2x);
       }
 
       &__signup {
         cursor: pointer;
         border-radius: 4px;
-        padding: map-get($spacings, x);
-        color: map-get($colors, brand);
+        padding: map-get($spacings, 2x);
+        color: map-get($colors, indigo-700);
         font-size: map-get($font-sizes, small);
         font-weight: map-get($font-weights, medium);
         line-height: 20px;
@@ -218,7 +218,7 @@
     margin-bottom: 80px;
 
     span {
-      color: map-get($colors, secondary);
+      color: map-get($colors, neutral-600);
     }
   }
 
@@ -232,14 +232,14 @@
     display: flex;
     flex-direction: column;
     border-radius: 8px;
-    border: 1px solid map-get($colors, light-gray);
-    background: map-get($background-colors, primary);
-    padding: map-get($spacings, 2x);
+    border: 1px solid map-get($colors, neutral-200);
+    background: map-get($background-colors, white);
+    padding: map-get($spacings, 4x);
 
     &--purple {
 
       .intro__illustration__image {
-        background-color: map-get($background-colors, light-purple);
+        background-color: map-get($background-colors, indigo-50);
       }
     }
 
@@ -262,7 +262,7 @@
     }
 
     &__image {
-      background-color: map-get($background-colors, light-purple);
+      background-color: map-get($background-colors, indigo-50);
       border-radius: 8px;
       width: 40px;
       height: 40px;
@@ -276,13 +276,13 @@
       font-size: map-get($font-sizes, small);
       font-weight: map-get($font-weights, semibold);
       line-height: 20px;
-      color: map-get($colors, primary);
-      margin-bottom: map-get($spacings, x);
+      color: map-get($colors, neutral-900);
+      margin-bottom: map-get($spacings, 2x);
     }
 
     &__description {
       font-size: map-get($font-sizes, xsmall);
-      color: map-get($colors, secondary);
+      color: map-get($colors, neutral-600);
       font-weight: map-get($font-weights, normal);
       line-height: 16px;
     }
@@ -299,8 +299,8 @@
     scrollbar-width: none;
     max-height: 100px;
     border-radius: 8px;
-    border: 1px solid map-get($colors, light-gray);
-    background-color: map-get($background-colors, tertiary);
+    border: 1px solid map-get($colors, neutral-200);
+    background-color: map-get($background-colors, neutral-50);
     height: 40px;
     padding: 12px 14px;
     outline: none;
@@ -314,8 +314,8 @@
     align-items: center;
     gap: 4px;
     border-radius: 4px;
-    background: map-get($background-colors, brand);
-    color: map-get($colors, primary-invert);
+    background: map-get($background-colors, indigo-700);
+    color: map-get($colors, white);
   }
 }
 </style>

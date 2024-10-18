@@ -45,31 +45,43 @@ $side-padding: (
 
 // Colors
 $colors: (
-  primary: #171717,
-  primary-hover: #0a0a0a,
-  primary-invert: #fff,
-  secondary: #525252,
-  tertiary: #737373,
-  brand: #4338ca,
-  disabled: #a3a3a3,
+  white: #ffffff,
+  indigo-700: #4338ca,
+  indigo-50: #eef2ff,
+  gray-50: #f9fafb,
+  neutral-50: #fafafa,
+  neutral-200: #e5e5e5,
+  neutral-400: #a3a3a3,
+  neutral-500: #737373,
+  neutral-600: #525252,
+  neutral-700: #404040,
+  neutral-950: #0a0a0a,
+  neutral-900: #171717,
   error: #dc2626,
   success: #15803d,
-  warning: #a16207,
-  light-gray: #e5e5e5
+  warning: #a16207
 );
 
 // Background colors
 $background-colors: (
-  primary: #fff,
+  white: #ffffff,
+  indigo-700: #4338ca,
+  indigo-50: #eef2ff,
+  gray-50: #f9fafb,
+  neutral-50: #fafafa,
+  neutral-200: #e5e5e5,
+  neutral-400: #a3a3a3,
+  neutral-500: #737373,
+  neutral-600: #525252,
+  neutral-700: #404040,
+  neutral-950: #0a0a0a,
+  neutral-900: #171717,
   secondary: #e5e7eb,
-  tertiary: #fafafa,
   disabled: #f5f5f5,
-  brand: #4338ca,
   error: #dc2626,
   success-subtle: #f0fdf4,
   success: #15803d,
   warning-subtle: #fffbeb,
-  light-purple: #eef2ff,
   fushia: #c026d3,
   light-fushia: #fdf4ff,
   light-orange: #f97316,
@@ -77,11 +89,10 @@ $background-colors: (
 );
 
 $spacings: (
-  half-x: 4px,
-  third-x: 6px,
-  x: 8px,
-  x-and-half: 12px,
-  2x: 16px,
-  3x: 24px,
-  4x: 32px
+  x: 4px,
+  2x: 8px,
+  3x: 12px,
+  4x: 16px,
+  6x: 24px,
+  8x: 32px
 );
