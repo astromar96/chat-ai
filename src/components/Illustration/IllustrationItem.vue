@@ -36,25 +36,25 @@ const { title, customClass } = defineProps({
 
     &--purple {
 
-        .intro__illustration__image {
+        .illustration__image {
             background-color: map-get($background-colors, indigo-50);
         }
     }
 
     &--green {
-        .intro__illustration__image {
+        .illustration__image {
             background-color: map-get($background-colors, success-subtle);
         }
     }
 
     &--dark-purple {
-        .intro__illustration__image {
+        .illustration__image {
             background-color: map-get($background-colors, light-fushia);
         }
     }
 
     &--orange {
-        .intro__illustration__image {
+        .illustration__image {
             background-color: map-get($background-colors, warning-subtle);
         }
     }
