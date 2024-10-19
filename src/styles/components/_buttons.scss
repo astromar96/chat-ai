@@ -9,6 +9,7 @@
   align-items: center;
   gap: 4px;
   border-radius: 4px;
+  transition: all 0.2s linear;
   &--primary {
     background-color: map-get($colors, indigo-700);
     box-shadow:
@@ -69,7 +70,6 @@
   &--full-width {
     width: 100%;
   }
-  transition: all 0.2s linear;
 }
 
 .resetted-button {
