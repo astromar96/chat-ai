@@ -17,7 +17,7 @@
 </template>
 
 <script setup>
-const { text, type, disabled, fullWidth, leftAlignedContent } = defineProps({
+defineProps({
     text: String,
     disabled: Boolean,
     fullWidth: Boolean,

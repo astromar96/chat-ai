@@ -11,7 +11,7 @@
 </template>
 
 <script setup>
-const { title, customClass } = defineProps({
+defineProps({
     img: String,
     title: String,
     customClass: String
