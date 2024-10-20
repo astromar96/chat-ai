@@ -1,5 +1,5 @@
 <template>
-    <textarea :style="{ height }" @keyup='handleKeyUp' class="chat-input" placeholder="Type a message"></textarea>
+    <textarea :style="{ height }" @keyup='handleKeyUp' class="chat-input" placeholder="Ask me anything..."></textarea>
 </template>
 
 <script setup>
